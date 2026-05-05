@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">DRAMA<span>HUB</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">About</a>
+    <a href="signin.html">Sign In</a>
+    <a href="register.html">Register</a>
+  </nav>
+  <button onclick="logout()" class="logout-btn">Logout</button>
+</header>
+
+<section class="section">
+  <h1>All Dramas</h1>
+  <div class="cards" id="collectionContainer"></div>
+</section>
+
+<section class="section">
+  <h1>My Favorites ❤️</h1>
+  <div class="cards" id="favoritesContainer">
+  </div>
+  </section>
+
+
+
+
+<script src="auth.js"></script>
+<script src="collection.js"></script>
+<script>
+  checkAuth();
+</script>
+
+</body>
+</html>
